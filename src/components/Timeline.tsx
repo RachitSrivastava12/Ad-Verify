@@ -50,32 +50,37 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 
 const Timeline: React.FC = () => {
   const milestones = [
-    {
-      icon: <Layers className="h-5 w-5 text-white" />,
-      title: "Architecture & Design",
-      description: "Developing the system architecture for integrating with UpRock's DePIN infrastructure and designing the ad verification algorithms.",
-      isActive: true
-    },
-    {
-      icon: <Code className="h-5 w-5 text-white" />,
-      title: "Prototype Development",
-      description: "Building the initial prototype with core verification capabilities and integration with UpRock's mobile network.",
-      isActive: false,
-    },
-    {
-      icon: <Laptop className="h-5 w-5 text-white" />,
-      title: "Ad Platform Integration",
-      description: "Expanding API capabilities to connect with major ad platforms and developing the analytics dashboard.",
-      isActive: false
-    },
-    {
-      icon: <Rocket className="h-5 w-5 text-white" />,
-      title: "Public Launch",
-      description: "Official platform launch with full feature set and global availability for advertisers and publishers.",,
-      isActive: false,
-      isLast: true
-    }
-  ];
+  {
+    icon: <Layers className="h-5 w-5 text-white" />,
+    title: "Architecture & Design",
+    description:
+      "Developing the system architecture for integrating with UpRock's DePIN infrastructure and designing the ad verification algorithms.",
+    isActive: true,
+  },
+  {
+    icon: <Code className="h-5 w-5 text-white" />,
+    title: "Prototype Development",
+    description:
+      "Building the initial prototype with core verification capabilities and integration with UpRock's mobile network.",
+    isActive: false,
+  },
+  {
+    icon: <Laptop className="h-5 w-5 text-white" />,
+    title: "Ad Platform Integration",
+    description:
+      "Expanding API capabilities to connect with major ad platforms and developing the analytics dashboard.",
+    isActive: false,
+  },
+  {
+    icon: <Rocket className="h-5 w-5 text-white" />,
+    title: "Public Launch",
+    description:
+      "Official platform launch with full feature set and global availability for advertisers and publishers.",
+    isActive: false,
+    isLast: true,
+  },
+];
+
 
   return (
     <section className="py-20 bg-gray-900/50 relative overflow-hidden" id="roadmap">

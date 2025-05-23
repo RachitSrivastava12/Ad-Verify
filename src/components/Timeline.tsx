@@ -54,28 +54,24 @@ const Timeline: React.FC = () => {
       icon: <Layers className="h-5 w-5 text-white" />,
       title: "Architecture & Design",
       description: "Developing the system architecture for integrating with UpRock's DePIN infrastructure and designing the ad verification algorithms.",
-      date: "Q3 2023",
       isActive: true
     },
     {
       icon: <Code className="h-5 w-5 text-white" />,
       title: "Prototype Development",
       description: "Building the initial prototype with core verification capabilities and integration with UpRock's mobile network.",
-      date: "Q4 2023",
-      isActive: true
+      isActive: false,
     },
     {
       icon: <Laptop className="h-5 w-5 text-white" />,
       title: "Ad Platform Integration",
       description: "Expanding API capabilities to connect with major ad platforms and developing the analytics dashboard.",
-      date: "Q1 2024",
       isActive: false
     },
     {
       icon: <Rocket className="h-5 w-5 text-white" />,
       title: "Public Launch",
-      description: "Official platform launch with full feature set and global availability for advertisers and publishers.",
-      date: "Q2 2024",
+      description: "Official platform launch with full feature set and global availability for advertisers and publishers.",,
       isActive: false,
       isLast: true
     }

@@ -28,6 +28,6 @@ Ad fraud costs advertisers billions every year. DeViewAI aims to stop that — u
 4. Partner Onboarding
 
 ## 💡 Built for:
-[UpRock DePIN Catalyst Grant](https://www.uprock.com/) – empowering developers to build on decentralized mobile IP networks.
+[UpRock DePIN Catalyst Grant](https://uprock.com/grants) – empowering developers to build on decentralized mobile IP networks.
 
 ---

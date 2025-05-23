@@ -46,7 +46,7 @@ const CallToAction: React.FC = () => {
                 
                 <div className="flex flex-col space-y-4">
                   <SocialLink
-                    href="https://github.com/deviewai"
+                    href="https://github.com/RachitSrivastava12/Ad-Verify"
                     icon={<Github className="h-5 w-5" />}
                     label="GitHub"
                   />

@@ -68,13 +68,13 @@ const Footer: React.FC = () => {
               <li className="text-gray-400">
                 <span className="block">Email:</span>
                 <a href="mailto:rachitsrivastava76@gmail.com" className="text-indigo-400 hover:text-indigo-300">
-                  info@deviewai.io
+                  rachitsrivastava76@gmail.com
                 </a>
               </li>
               <li className="text-gray-400">
                 <span className="block">UpRock:</span>
                 <a href="https://uprock.com/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300">
-                  uprock.network
+                  https://uprock.com
                 </a>
               </li>
             </ul>

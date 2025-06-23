@@ -1,4 +1,4 @@
-# DeViewAI – Decentralized Ad Integrity & Viewability Engine
+# DeViewAI – Decentralized Ad Integrity & Viewability Engine (WIP)
 
 **Built for the $100k UpRock DePIN Catalyst Grant**
 

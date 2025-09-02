@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://adepin:watchad@localhost:5432/ads"
+}
+
+model Client {
+  id        Int      @id @default(autoincrement())
+  address   String
+  name      String?
+  email     String?   @unique
+  createdAt DateTime @default(now())
+  ads       Ad[]
+}
+
+model Ad {
+  id          Int            @id @default(autoincrement())
+  title       String?
+  content     String?
+  url         String?
+  payperad    Int
+  nuOfEng     Int
+  clientId    Int
+  createdAt   DateTime       @default(now())
+  client      Client         @relation(fields: [clientId], references: [id])
+  engagements AdEngagement[]
+}
+
+model Engager {
+  id         Int            @id @default(autoincrement())
+  address    String
+  email      String         @unique
+  createdAt  DateTime       @default(now())
+  adsEngaged AdEngagement[]
+}
+
+model AdEngagement {
+  id        Int      @id @default(autoincrement())
+  adId      Int
+  engagerId Int
+  metadata  Json?
+  createdAt DateTime @default(now())
+  ad        Ad       @relation(fields: [adId], references: [id])
+  engager   Engager  @relation(fields: [engagerId], references: [id])
+}
